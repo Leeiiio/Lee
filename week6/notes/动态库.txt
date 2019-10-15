@@ -1,0 +1,5 @@
+gcc -shared -fPIC -o libdynamiclib.so init.c operate.c
+gcc test.c ./libdynamiclib.so -o test
+
+
+外部引用： gcc -rdynamic -o test test.c -ldl

@@ -1,0 +1,2 @@
+valgrind --track-fds=yes --leak-check=full --undef-value-error=yes ./memtest
+
